@@ -1,0 +1,18 @@
+{
+    "name": "pecodetestcypress01",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "cy:run": "npx cypress run",
+        "cy:open": "npx cypress open"
+    },
+    "author": "Yaroslav Baranovskyi",
+    "license": "ISC",
+    "devDependencies": {},
+    "dependencies": {
+        "cypress": "^9.7.0",
+        "mochawesome": "^7.1.3",
+        "mochawesome-report-generator": "^6.2.0"
+    }
+}

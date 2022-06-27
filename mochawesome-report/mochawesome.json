@@ -1,0 +1,271 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 7,
+    "passes": 5,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-06-26T18:52:14.551Z",
+    "end": "2022-06-26T18:52:30.179Z",
+    "duration": 15628,
+    "testsRegistered": 7,
+    "passPercent": 71.42857142857143,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a075ad2d-04f1-420e-8aa0-441abd97a2c7",
+      "title": "",
+      "fullFile": "cypress/integration/LoginTest/LoginTest.cy.js",
+      "file": "cypress/integration/LoginTest/LoginTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0fe9738-9747-4bea-b84d-08b0c1a89de8",
+          "title": "Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+              "title": "UI Tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verify that login is successfully",
+                  "fullTitle": "Test UI Tests Verify that login is successfully",
+                  "timedOut": null,
+                  "duration": 6636,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "_methods.login.typeUsername(ENV.user1.username);\n_methods.login.typePassword(ENV.user1.password);\n_methods.login.clickOnLoginButton();\n_methods.login.verifyLoginSuccess();",
+                  "err": {
+                    "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php' to not include 'https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php'",
+                    "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php' to not include 'https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php'\n    at Login.verifyLoginSuccess (https://www.pecodesoftware.com/__cypress/tests?p=cypress\\integration\\LoginTest\\LoginTest.cy.js:261:14)\n    at Context.eval (https://www.pecodesoftware.com/__cypress/tests?p=cypress\\integration\\LoginTest\\LoginTest.cy.js:114:22)",
+                    "diff": null
+                  },
+                  "uuid": "891660bd-fd9c-4b90-9d3c-8724b637b472",
+                  "parentUUID": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verify two errors appear with an empty username and login",
+                  "fullTitle": "Test UI Tests Verify two errors appear with an empty username and login",
+                  "timedOut": null,
+                  "duration": 1123,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_methods.login.typeEmptyUsername();\n_methods.login.typeEmptyPassword();\n_methods.login.clickOnLoginButton();\n_methods.login.verifyErrorEnterUsername();\n_methods.login.verifyErrorEnterPassword();",
+                  "err": {},
+                  "uuid": "2c45b871-2ae3-42ef-9dc1-30229ead78c8",
+                  "parentUUID": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verify password error appear",
+                  "fullTitle": "Test UI Tests Verify password error appear",
+                  "timedOut": null,
+                  "duration": 1072,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_methods.login.typeUsername(ENV.user1.username);\n_methods.login.typeEmptyPassword();\n_methods.login.clickOnLoginButton();\n_methods.login.verifyErrorEnterPassword();",
+                  "err": {},
+                  "uuid": "20fac0eb-0aae-4a33-8a64-35851c589c3c",
+                  "parentUUID": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verify username error appear",
+                  "fullTitle": "Test UI Tests Verify username error appear",
+                  "timedOut": null,
+                  "duration": 1036,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_methods.login.typeEmptyUsername();\n_methods.login.typePassword(ENV.user1.password);\n_methods.login.clickOnLoginButton();\n_methods.login.verifyErrorEnterUsername();",
+                  "err": {},
+                  "uuid": "79246013-faa0-43a2-a293-39603d1dcda1",
+                  "parentUUID": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verify no account found with that username error appear",
+                  "fullTitle": "Test UI Tests Verify no account found with that username error appear",
+                  "timedOut": null,
+                  "duration": 1367,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_methods.login.typeUsername(ENV.user1.username);\n_methods.login.typePassword(ENV.user1.password);\n_methods.login.clickOnLoginButton();\n_methods.login.verifyErrorNoAccountFound();",
+                  "err": {},
+                  "uuid": "41b2dcf0-a60b-4417-b96a-00e2db13a1a8",
+                  "parentUUID": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Verify all the elements presented",
+                  "fullTitle": "Test UI Tests Verify all the elements presented",
+                  "timedOut": null,
+                  "duration": 244,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_methods.login.verifyAllTheElementsPresented();",
+                  "err": {},
+                  "uuid": "0c95ad12-8474-4abe-8835-da3ae0aac445",
+                  "parentUUID": "25f04755-df0f-4e91-82c0-cfb7302fec59",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "2c45b871-2ae3-42ef-9dc1-30229ead78c8",
+                "20fac0eb-0aae-4a33-8a64-35851c589c3c",
+                "79246013-faa0-43a2-a293-39603d1dcda1",
+                "41b2dcf0-a60b-4417-b96a-00e2db13a1a8",
+                "0c95ad12-8474-4abe-8835-da3ae0aac445"
+              ],
+              "failures": [
+                "891660bd-fd9c-4b90-9d3c-8724b637b472"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 11478,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "ddd0681f-dd9e-4b48-a30a-4915708d0b7f",
+              "title": "API test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "API test",
+                  "fullTitle": "Test API test API test",
+                  "timedOut": null,
+                  "duration": 906,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.loginAPI(ENV.user1.username, ENV.user1.password);",
+                  "err": {
+                    "message": "TypeError: cy.loginAPI is not a function",
+                    "estack": "TypeError: cy.loginAPI is not a function\n    at Context.eval (https://www.pecodesoftware.com/__cypress/tests?p=cypress\\integration\\LoginTest\\LoginTest.cy.js:160:10)",
+                    "diff": null
+                  },
+                  "uuid": "ca006098-f816-4bff-b1a3-40a2731b2d4b",
+                  "parentUUID": "ddd0681f-dd9e-4b48-a30a-4915708d0b7f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "ca006098-f816-4bff-b1a3-40a2731b2d4b"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 906,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": true,
+          "html": true,
+          "json": true
+        }
+      },
+      "version": "6.2.0"
+    }
+  }
+}

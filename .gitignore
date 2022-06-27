@@ -1,0 +1,4 @@
+/node_modules
+cypress/videos/LoginTest/LoginTest.cy.js.mp4
+cypress/reports/mochareports/assets/LoginTest/LoginTest.cy.js/Test -- API test -- API test (failed).png
+cypress/reports/mochareports/assets/LoginTest/LoginTest.cy.js/Test -- UI Tests -- Verify that login is successfully (failed).png
